@@ -1,4 +1,6 @@
 function calc(a, b, operation) {
+	if (isNaN(a)|| isNaN(b)) {
+		console.log('ошибка')}
 	if (operation === 'add') {
 		return a + b;
 	}
@@ -10,6 +12,7 @@ function calc(a, b, operation) {
 	}
 }
 
+
 console.log(calc(5, 2, 'add'));
 console.log(calc(10, 2, 'substract'));
-console.log(calc(2, 3, 'multi'))
+(calc('f', 3, 'multi'));
